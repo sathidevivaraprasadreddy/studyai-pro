@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<h1>Welcome to StudyAI Pro</h1>
+
+<p class="lead">
+AI-powered learning assistant using multi-agent RAG.
+</p>
+
+<div class="row mt-4">
+
+    <div class="col-md-4 mb-3">
+        <a href="/upload"  target="_blank"
+           class="btn btn-primary w-100">
+            Upload PDF
+        </a>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <a href="/chat" target="_blank"
+           class="btn btn-success w-100">
+            Ask Questions
+        </a>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <a href="/dashboard" target="_blank"
+           class="btn btn-warning w-100">
+            Dashboard
+        </a>
+    </div>
+
+</div>
+
+{% endblock %}

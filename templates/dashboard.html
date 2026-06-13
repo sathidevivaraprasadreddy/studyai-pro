@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}
+Dashboard
+{% endblock %}
+
+{% block content %}
+
+<h2>Analytics Dashboard</h2>
+
+<div id="chart-data"
+     data-labels='{{ analytics.keys() | list | tojson }}'
+     data-values='{{ analytics.values() | list | tojson }}'>
+</div>
+
+<canvas id="analyticsChart"></canvas>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        const chartData =
+            document.getElementById(
+                "chart-data"
+            );
+
+        const labels =
+            JSON.parse(
+                chartData.dataset.labels
+            );
+
+        const values =
+            JSON.parse(
+                chartData.dataset.values
+            );
+
+        new Chart(
+            document.getElementById(
+                "analyticsChart"
+            ),
+            {
+                type: "bar",
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: "Usage",
+                        data: values
+                    }]
+                }
+            }
+        );
+    }
+);
+</script>
+
+{% endblock %}

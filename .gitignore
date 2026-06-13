@@ -1,0 +1,26 @@
+# Environment
+.env
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Databases
+*.db
+
+# Logs
+logs/
+*.log
+
+# Uploaded files
+uploads/*.pdf
+
+# Vector database
+vector_db/*.index
+vector_db/*.pkl
+
+# OS
+.DS_Store
+Thumbs.db
