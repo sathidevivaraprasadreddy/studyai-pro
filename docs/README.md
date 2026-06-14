@@ -1,104 +1,201 @@
-# StudyAI Pro
+# 🎓 StudyAI Pro
 
-StudyAI Pro is an AI-powered learning assistant built using Flask, Gemini, and Retrieval-Augmented Generation (RAG).
+## AI-Powered Multi-Agent Learning Assistant
 
-It helps students upload study materials and automatically generates quizzes, notes, flashcards, assessments, roadmaps, and personalized study recommendations.
+StudyAI Pro is an intelligent educational platform that transforms study materials into personalized learning experiences using Multi-Agent AI, Retrieval-Augmented Generation (RAG), memory systems, and advanced analytics.
 
-## Features
+Built with Flask, Google Gemini, FAISS, and Sentence Transformers, StudyAI Pro helps students learn faster, revise smarter, and track their academic progress through autonomous AI agents.
 
-- Multi-Agent Architecture
-- PDF Upload and Processing
-- Retrieval-Augmented Generation (RAG)
-- FAISS Vector Search
-- AI Tutor
-- Quiz Generator
-- Flashcard Generator
-- Assessment Generator
-- Revision Notes Generator
-- Learning Roadmap Generator
-- Study Coach
-- Session Analysis
-- User Memory
-- Analytics Dashboard
-- Secure File Uploads
-- Automated Testing
+---
 
-## Tech Stack
+## 🚀 Problem Statement
 
-### Backend
-- Flask
-- Python 3.13
+Students spend significant time reading lengthy PDFs, creating notes, preparing quizzes, and organizing revision schedules.
 
-### AI
-- Google Gemini
-- Sentence Transformers
-- FAISS
+Traditional learning methods often lead to:
 
-### Database
-- SQLite
+* Information overload
+* Inefficient revision
+* Poor knowledge retention
+* Lack of personalized guidance
+* Difficulty identifying weak topics
 
-### Frontend
-- HTML
-- CSS
-- JavaScript
-- Chart.js
+---
 
-### Testing
-- Pytest
+## 💡 Solution
 
-## Installation
+StudyAI Pro automates the learning process by deploying specialized AI agents that collaborate to analyze documents, generate learning resources, and guide students throughout their study journey.
 
-Clone the repository:
+Students simply upload a PDF and receive:
 
-```bash
-git clone <repository-url>
-cd studyai-pro
+* Smart Revision Notes
+* Flashcards
+* Quizzes
+* Assessments
+* Personalized Learning Roadmaps
+* AI Tutoring Support
+* Progress Analytics
+* Study Recommendations
+
+---
+
+# 🤖 Multi-Agent Architecture
+
+### 📄 Document Analysis Agent
+
+Processes uploaded PDFs and extracts key concepts, topics, and learning objectives.
+
+### 📝 Notes Agent
+
+Generates concise, structured revision notes from study materials.
+
+### 🎴 Flashcard Agent
+
+Creates active-recall flashcards for effective revision.
+
+### ❓ Quiz Agent
+
+Generates adaptive quizzes to evaluate understanding.
+
+### 📊 Assessment Agent
+
+Creates comprehensive assessments and learning evaluations.
+
+### 🗺 Roadmap Agent
+
+Builds personalized learning paths and study schedules.
+
+### 👨‍🏫 Tutor Agent
+
+Provides contextual AI tutoring using Retrieval-Augmented Generation (RAG).
+
+### 🎯 Study Coach Agent
+
+Analyzes learning behavior and recommends study improvements.
+
+### 📈 Analytics Agent
+
+Tracks performance and visualizes learning progress.
+
+---
+
+# ✨ Features
+
+## Learning Features
+
+* PDF Upload & Processing
+* AI Tutor
+* Quiz Generator
+* Flashcard Generator
+* Assessment Generator
+* Revision Notes Generator
+* Learning Roadmap Generator
+* Personalized Study Coach
+
+## AI Features
+
+* Multi-Agent Architecture
+* Retrieval-Augmented Generation (RAG)
+* Semantic Search
+* User Memory
+* Context-Aware Responses
+* Personalized Recommendations
+
+## Analytics
+
+* Session Analysis
+* Learning Progress Tracking
+* Performance Dashboard
+* Knowledge Insights
+
+## Security
+
+* Secure File Uploads
+* Environment Variable Protection
+* Input Validation
+* Production Logging
+
+## Quality Assurance
+
+* Automated Testing
+* Modular Architecture
+* Scalable Design
+
+---
+
+# 🏗 System Architecture
+
+```text
+Student Uploads PDF
+        │
+        ▼
+Document Analysis Agent
+        │
+        ▼
+Embedding Generation
+        │
+        ▼
+FAISS Vector Database
+        │
+        ▼
+RAG Retrieval Layer
+        │
+        ▼
+ ┌───────────────────────┐
+ │      AI Agents        │
+ ├───────────────────────┤
+ │ Notes Agent           │
+ │ Flashcard Agent       │
+ │ Quiz Agent            │
+ │ Assessment Agent      │
+ │ Roadmap Agent         │
+ │ Tutor Agent           │
+ │ Study Coach Agent     │
+ │ Analytics Agent       │
+ └───────────────────────┘
+        │
+        ▼
+ Personalized Learning Experience
 ```
 
-Create virtual environment:
+---
 
-```bash
-python -m venv venv
-```
+# 🛠 Technology Stack
 
-Activate:
+## Backend
 
-Windows:
+* Python 3.13
+* Flask
 
-```bash
-venv\Scripts\activate
-```
+## Artificial Intelligence
 
-Install dependencies:
+* Google Gemini
+* Sentence Transformers
+* FAISS
+* Retrieval-Augmented Generation (RAG)
 
-```bash
-pip install -r requirements.txt
-```
+## Database
 
-Configure environment:
+* SQLite
 
-Create a `.env` file and add:
+## Frontend
 
-```env
-GEMINI_API_KEY=your_api_key
-SECRET_KEY=studyai-secret
-```
+* HTML5
+* CSS3
+* JavaScript
+* Chart.js
 
-Initialize project:
+## Testing
 
-```bash
-python scripts/init_project.py
-```
+* Pytest
 
-Run application:
+---
 
-```bash
-python app.py
-```
+# 📂 Project Structure
 
-## Project Structure
-
+```text
 studyai-pro/
+│
 ├── agents/
 ├── database/
 ├── memory/
@@ -109,26 +206,84 @@ studyai-pro/
 ├── uploads/
 ├── utils/
 ├── vector_db/
+│
 ├── app.py
 ├── config.py
 ├── requirements.txt
 └── README.md
+```
 
-## API Endpoints
+---
 
-| Endpoint | Method | Description |
-|-----------|---------|-------------|
-| / | GET | Home Page |
-| /upload | POST | Upload PDF |
-| /chat | POST | Ask Tutor |
-| /quiz | POST | Generate Quiz |
-| /flashcards | POST | Generate Flashcards |
-| /notes | POST | Generate Notes |
-| /assessment | POST | Generate Assessment |
-| /roadmap | POST | Generate Learning Roadmap |
-| /dashboard | GET | Analytics Dashboard |
+# ⚙ Installation
 
-## Testing
+## Clone Repository
+
+```bash
+git clone <repository-url>
+cd studyai-pro
+```
+
+## Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+## Activate Environment
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Configure Environment Variables
+
+Create a `.env` file:
+
+```env
+GEMINI_API_KEY=your_api_key
+SECRET_KEY=studyai-secret
+```
+
+## Initialize Project
+
+```bash
+python scripts/init_project.py
+```
+
+## Run Application
+
+```bash
+python app.py
+```
+
+---
+
+# 🔌 API Endpoints
+
+| Endpoint    | Method | Description               |
+| ----------- | ------ | ------------------------- |
+| /           | GET    | Home Page                 |
+| /upload     | POST   | Upload PDF                |
+| /chat       | POST   | AI Tutor Chat             |
+| /quiz       | POST   | Generate Quiz             |
+| /flashcards | POST   | Generate Flashcards       |
+| /notes      | POST   | Generate Notes            |
+| /assessment | POST   | Generate Assessment       |
+| /roadmap    | POST   | Generate Learning Roadmap |
+| /dashboard  | GET    | Analytics Dashboard       |
+
+---
+
+# 🧪 Testing
 
 Run all tests:
 
@@ -136,13 +291,43 @@ Run all tests:
 python -m pytest -v
 ```
 
-## Competition Highlights
+---
 
-- Multi-Agent Educational AI System
-- Retrieval-Augmented Generation
-- Personalized Learning Memory
-- Analytics Dashboard
-- Secure Architecture
-- Automated Testing
-- Production Logging
+# 🏆 Competition Highlights
 
+* Multi-Agent Educational AI Platform
+* Retrieval-Augmented Generation (RAG)
+* Personalized Learning Memory
+* Semantic Search with FAISS
+* Intelligent Study Coaching
+* Learning Analytics Dashboard
+* Secure Architecture
+* Automated Testing Pipeline
+* Production Logging
+
+---
+
+# 🔮 Future Enhancements
+
+* Voice-Based Learning Assistant
+* Multi-Language Support
+* Learning Gap Detection
+* Autonomous Revision Scheduling
+* Mobile Application
+* Collaborative Study Rooms
+* Advanced Knowledge Graph Visualization
+* Predictive Exam Preparation
+
+---
+
+# 👨‍💻 Developer
+
+**S. DEVI VARA PRASAD REDDY**
+
+Building AI systems that make education smarter, more personalized, and more accessible.
+
+---
+
+# 📜 License
+
+MIT License
