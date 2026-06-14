@@ -10,37 +10,9 @@ Each agent performs a specialized task while collaborating with other agents thr
 
 ## System Flow
 
-```text
-User
- │
- ▼
-Flask Web Interface
- │
- ▼
-Planner Agent
- │
- ├─────────────┐
- ▼             │
-Retrieval Agent│
- │             │
- ▼             │
-Tutor Agent    │
- │             │
- ▼             │
-Verifier Agent │
- └─────────────┘
- │
- ▼
-Memory System
- │
- ▼
-Analytics Engine
- │
- ▼
-Dashboard
-```
+![architecture](architecture.png)
 
----
+----
 
 ## Components
 
