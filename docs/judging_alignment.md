@@ -50,7 +50,6 @@ StudyAI Pro is built using modern AI and software engineering practices.
 * HTML5
 * CSS3
 * JavaScript
-* Chart.js
 
 ### Engineering Highlights
 
