@@ -306,12 +306,6 @@ StudyAI Pro follows responsible AI principles:
 * Fairness
 * Secure File Handling
 
-See:
-
-```text
-docs/responsible_ai.md
-```
-
 ---
 
 # 🌟 Future Enhancements
