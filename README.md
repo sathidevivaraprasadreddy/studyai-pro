@@ -170,6 +170,7 @@ GEMINI_API_KEY=your_api_key
 SECRET_KEY=studyai-secret
 ```
 
+you can refer .env.example
 ---
 
 ## Run Application
