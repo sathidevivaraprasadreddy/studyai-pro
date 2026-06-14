@@ -104,7 +104,7 @@ Visualize:
 
 # 🏗 Architecture
 
-![Architecture](architecture.png)
+![architecture](architecture.png)
 
 ---
 
