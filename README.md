@@ -16,6 +16,13 @@ Built for the **Microsoft Agents League Hackathon 2026**.
 
 ---
 
+# 🔗 Important Links
+
+👉 [View GitHub Repository](https://github.com/sathidevivaraprasadreddy/studyai-pro)  
+🎥 [Watch Demo Video](https://youtu.be/Q2aurTVnR6c?si=7LGtVNL7REZODrF5)
+
+---
+
 # 🎥 Demo Video
 
 👉 [Watch Demo](https://youtu.be/Q2aurTVnR6c?si=7LGtVNL7REZODrF5)
