@@ -1,13 +1,11 @@
 # 🎓 StudyAI Pro
 
-![Python](https://img.shields.io/badge/Python-3.13-blue)
-![Flask](https://img.shields.io/badge/Flask-WebApp-black)
-![Gemini](https://img.shields.io/badge/Google-Gemini-orange)
-![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-green)
-![RAG](https://img.shields.io/badge/AI-RAG-purple)
-![Hackathon](https://img.shields.io/badge/Microsoft-Agents%20League%202026-success)
-![License](https://img.shields.io/badge/License-MIT-yellow)
-
+[![Python](https://img.shields.io/badge/Python-3.13-blue?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-WebApp-black?style=flat-square&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![Gemini](https://img.shields.io/badge/Google-Gemini-orange?style=flat-square&logo=googlegemini&logoColor=white)](https://deepmind.google/technologies/gemini/)
+[![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-green?style=flat-square)](https://github.com/facebookresearch/faiss)
+[![Hackathon](https://img.shields.io/badge/Microsoft-Agents%20League%202026-success?style=flat-square)](https://github.com/sathidevivaraprasadreddy/studyai-pro)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](https://opensource.org/licenses/MIT)
 ---
 
 > AI-powered Multi-Agent Learning Assistant that transforms PDFs into personalized learning experiences using Retrieval-Augmented Generation (RAG), Memory, Analytics, and Gemini AI.
